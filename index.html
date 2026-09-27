@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="وب‌سایت شخصی محمد جاهدی الماس؛ مدیر و مالک محصول با تجربه در نرم‌افزارهای حسابداری، مالی و محصولات سازمانی.">
+  <meta name="theme-color" content="#10243e">
+  <title>محمد جاهدی الماس | مدیر و مالک محصول</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#10243e; --navy2:#17395e; --teal:#17aeb5; --teal-soft:#e2f6f5;
+      --ink:#182b43; --muted:#64748b; --paper:#f7f9fc; --white:#fff;
+      --line:#e4eaf1; --shadow:0 18px 50px rgba(16,36,62,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Vazirmatn",sans-serif;line-height:1.85}
+    body.en{font-family:"Inter",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(16,36,62,.97);color:#fff;backdrop-filter:blur(14px)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;white-space:nowrap}
+    .mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#27d0d0,#1685b7);color:#10243e;font-size:23px;font-weight:800}
+    .navlinks{display:flex;align-items:center;gap:25px;font-size:14px;color:#d9e6f2}
+    .navlinks a:hover{color:#66e1df}
+    .navtools{display:flex;align-items:center;gap:12px}
+    .lang{border:1px solid #55718d;border-radius:999px;padding:5px;display:flex;gap:3px}
+    .lang button{border:0;background:transparent;color:#d9e6f2;padding:6px 11px;border-radius:999px;cursor:pointer;font:inherit;font-size:13px}
+    .lang button.active{background:var(--teal);color:var(--navy);font-weight:800}
+    .menu-btn{display:none;border:1px solid #55718d;background:transparent;color:white;border-radius:9px;padding:7px 10px;font-size:18px}
+    .hero{background:linear-gradient(120deg,#fff 0%,#f7fbfd 58%,#eaf7f8 100%);overflow:hidden}
+    .hero-grid{min-height:560px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;padding-top:60px;padding-bottom:64px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:#34718a;font-size:14px;font-weight:600}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px #17aeb51c}
+    h1{font-size:clamp(36px,5vw,61px);line-height:1.23;letter-spacing:-1.7px;margin:20px 0 12px;color:var(--navy)}
+    h1 span{color:#159ca9}
+    .subtitle{font-size:19px;font-weight:600;color:#3e5874;margin:0 0 17px}
+    .intro{max-width:620px;color:#5b6d82;font-size:16px;margin:0}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 21px;border-radius:12px;font-weight:700;font-size:14px;border:1px solid transparent;transition:.2s}
+    .btn.primary{background:var(--navy);color:#fff;box-shadow:0 8px 20px #10243e20}
+    .btn.primary:hover{background:#1b426b;transform:translateY(-2px)}
+    .btn.secondary{background:#fff;border-color:#d6e0e9;color:var(--navy)}
+    .btn.secondary:hover{border-color:var(--teal);transform:translateY(-2px)}
+    .hero-art{position:relative;min-height:390px;display:grid;place-items:center}
+    .orb{position:absolute;width:330px;height:330px;border-radius:50%;background:linear-gradient(135deg,#dff6f5,#dbe9fa);right:50%;top:50%;transform:translate(50%,-50%)}
+    .dashboard{position:relative;width:min(100%,440px);background:#fff;border:1px solid #e2eaf1;border-radius:22px;padding:23px;box-shadow:0 28px 70px #17395e20;transform:rotate(-2deg)}
+    .dash-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .dash-title{font-weight:800;color:var(--navy)}
+    .dash-chip{background:var(--teal-soft);color:#087e86;border-radius:999px;padding:4px 10px;font-size:11px;font-weight:700}
+    .dash-kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .kpi{border:1px solid #e8eef4;border-radius:13px;padding:13px}
+    .kpi small{display:block;color:#7b8b9c;font-size:11px}
+    .kpi strong{display:block;color:var(--navy);font-size:19px;margin-top:4px}
+    .chart{margin-top:15px;border:1px solid #e8eef4;border-radius:14px;padding:15px 14px 8px}
+    .chart-label{font-size:12px;font-weight:700;color:#52677f}
+    .bars{height:105px;display:flex;align-items:end;gap:9px;padding:10px 4px 0}
+    .bars i{display:block;flex:1;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,#22c3c2,#3c8fbd)}
+    .float-card{position:absolute;background:#fff;border:1px solid #e4edf3;box-shadow:0 12px 30px #10243e12;border-radius:14px;padding:12px 15px;font-size:12px;color:#52677f}
+    .float-card strong{display:block;color:var(--navy);font-size:14px}
+    .fc1{top:35px;left:0}.fc2{bottom:35px;right:0}
+    section{padding:82px 0}
+    .section-head{margin-bottom:32px}
+    .section-kicker{color:#138f9c;font-size:13px;font-weight:800;letter-spacing:.5px}
+    h2{font-size:clamp(27px,3vw,38px);line-height:1.35;color:var(--navy);margin:7px 0 8px}
+    .section-desc{margin:0;color:var(--muted);max-width:720px}
+    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:25px;align-items:stretch}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 8px 30px #10243e05}
+    .panel p{margin:0;color:#586b80}
+    .facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}
+    .fact{background:#f7fafc;border-radius:12px;padding:14px}
+    .fact small{display:block;color:#7a8a9b;font-size:12px}
+    .fact strong{display:block;margin-top:3px;font-size:14px;color:var(--navy)}
+    .quote{background:linear-gradient(145deg,#e9f8f7,#f3f8fc);display:flex;flex-direction:column;justify-content:space-between}
+    .quote-mark{font-size:54px;line-height:1;color:#8bd6d6}
+    .quote blockquote{margin:8px 0 20px;color:#254761;font-size:20px;font-weight:600}
+    .quote cite{font-style:normal;color:#668095;font-size:13px}
+    .timeline{position:relative;display:grid;gap:16px}
+    .job{display:grid;grid-template-columns:160px 1fr;gap:22px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+    .period{color:#118d98;font-size:13px;font-weight:800}
+    .job h3{margin:0;color:var(--navy);font-size:19px}
+    .company{font-weight:600;color:#60758b;margin:3px 0 9px}
+    .job p{margin:0;color:#64758a;font-size:14px}
+    .tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
+    .tag{display:inline-block;background:#edf7f8;color:#247780;border-radius:999px;padding:4px 10px;font-size:12px}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .project{background:#fff;border:1px solid var(--line);border-radius:18px;padding:23px;display:flex;flex-direction:column;min-height:210px;transition:.2s}
+    .project:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#c7e7e7}
+    .project-icon{width:43px;height:43px;border-radius:13px;background:var(--teal-soft);display:grid;place-items:center;color:#07878d;font-size:21px;margin-bottom:15px}
+    .project h3{margin:0 0 8px;color:var(--navy);font-size:18px}
+    .project p{margin:0 0 18px;color:#6a7b8e;font-size:14px;flex:1}
+    .project a{color:#087f96;font-weight:700;font-size:13px}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .skillbox{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px}
+    .skillbox h3{margin:0 0 13px;color:var(--navy);font-size:17px}
+    .skillbox .tag{margin:0 4px 8px 0}
+    .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+    .edu{background:#fff;border:1px solid var(--line);border-radius:17px;padding:23px}
+    .edu h3{margin:0;color:var(--navy);font-size:17px}
+    .edu p{margin:5px 0 0;color:#718196;font-size:14px}
+    .course-list{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .course{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;color:#52677d;font-size:14px}
+    .contact{background:var(--navy);color:#fff;padding:58px 0}
+    .contact h2{color:#fff}
+    .contact .section-desc{color:#c0d0df}
+    .contact-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+    .contact .btn.secondary{background:transparent;color:#fff;border-color:#57718a}
+    footer{background:#0b1a2c;color:#91a5ba;padding:19px 0;font-size:12px}
+    .footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .hidden{display:none!important}
+    @media(max-width:850px){
+      .navlinks{display:none;position:absolute;top:76px;inset-inline:0;background:var(--navy);padding:20px;flex-direction:column;gap:14px}
+      .navlinks.open{display:flex}.menu-btn{display:block}
+      .hero-grid{grid-template-columns:1fr;padding-top:55px}.hero-art{min-height:350px}
+      .about-grid{grid-template-columns:1fr}.projects,.skills-grid{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .wrap{width:min(100% - 28px,1120px)}.brand{font-size:13px}.mark{width:36px;height:36px}
+      .nav{min-height:68px}.navlinks{top:68px}.hero-grid{gap:10px;padding-bottom:45px}
+      h1{font-size:39px}.subtitle{font-size:16px}.intro{font-size:14px}
+      .hero-art{min-height:310px}.orb{width:260px;height:260px}.dashboard{padding:16px;width:95%}
+      .fc1{top:10px}.fc2{bottom:5px}.float-card{padding:9px 11px}
+      section{padding:58px 0}.panel{padding:21px}.facts{grid-template-columns:1fr 1fr}
+      .job{grid-template-columns:1fr;gap:6px;padding:20px}.projects,.skills-grid,.edu-grid,.course-list{grid-template-columns:1fr}
+      .contact{padding:45px 0}
+    }
+    body.en .nav,body.en .navlinks,body.en .navtools,body.en .actions,body.en .contact-row{direction:ltr}
+    body.en .hero-grid,body.en .about-grid,body.en .job,body.en .facts,body.en .projects,body.en .skills-grid,body.en .edu-grid,body.en .course-list{direction:ltr}
+    body.en .section-head,body.en .panel,body.en .job,body.en .project,body.en .skillbox,body.en .edu,body.en .course{text-align:left}
+    body.en .tag{margin:0 8px 8px 0}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home"><span class="mark">M</span><span data-fa="محمد جاهدی الماس" data-en="Mohamad Jahedi Almas">محمد جاهدی الماس</span></a>
+      <nav class="navlinks" id="navlinks">
+        <a href="#about" data-fa="درباره من" data-en="About">درباره من</a>
+        <a href="#experience" data-fa="تجربه کاری" data-en="Experience">تجربه کاری</a>
+        <a href="#projects" data-fa="محصولات" data-en="Products">محصولات</a>
+        <a href="#expertise" data-fa="تخصص‌ها" data-en="Expertise">تخصص‌ها</a>
+        <a href="#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+      </nav>
+      <div class="navtools">
+        <div class="lang" aria-label="Language selector">
+          <button class="active" id="faBtn" onclick="setLang('fa')">فارسی</button>
+          <button id="enBtn" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <header class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span><span data-fa="مدیر و مالک محصول | نرم‌افزارهای مالی" data-en="Product Manager & Owner | Financial Software">مدیر و مالک محصول | نرم‌افزارهای مالی</span></div>
+          <h1 data-fa="نیازهای کسب‌وکار،<br><span>محصولات ارزش‌آفرین</span>" data-en="Business needs,<br><span>meaningful products</span>">نیازهای کسب‌وکار،<br><span>محصولات ارزش‌آفرین</span></h1>
+          <p class="subtitle" data-fa="پیوند محصول، کسب‌وکار و فناوری" data-en="Connecting product, business & technology">پیوند محصول، کسب‌وکار و فناوری</p>
+          <p class="intro" data-fa="با بیش از ۱۵ سال تجربه حرفه‌ای در نرم‌افزار، پشتیبانی و مدیریت محصول، بر شناخت نیاز کاربران و ذی‌نفعان، شکل‌دهی مسیر محصول و تبدیل مسائل پیچیده کسب‌وکار به راهکارهای کاربردی تمرکز دارم." data-en="With 15+ years of professional experience across software, customer support, and product management, I focus on understanding user and stakeholder needs, shaping product direction, and turning complex business challenges into practical solutions.">با بیش از ۱۵ سال تجربه حرفه‌ای در نرم‌افزار، پشتیبانی و مدیریت محصول، بر شناخت نیاز کاربران و ذی‌نفعان، شکل‌دهی مسیر محصول و تبدیل مسائل پیچیده کسب‌وکار به راهکارهای کاربردی تمرکز دارم.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://www.linkedin.com/in/mohamad-jahedi-almas-849a6986/" target="_blank" rel="noopener noreferrer"><span>in</span><span data-fa="مشاهده لینکدین" data-en="View LinkedIn">مشاهده لینکدین</span> ↗</a>
+            <a class="btn secondary" href="#contact"><span>✉</span><span data-fa="ارتباط با من" data-en="Get in touch">ارتباط با من</span></a>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of product analytics dashboard">
+          <div class="orb"></div>
+          <div class="float-card fc1"><strong data-fa="تصمیم‌گیری داده‌محور" data-en="Data-informed decisions">تصمیم‌گیری داده‌محور</strong><span data-fa="از بینش تا اقدام" data-en="From insight to action">از بینش تا اقدام</span></div>
+          <div class="dashboard">
+            <div class="dash-head"><span class="dash-title" data-fa="نمای کلی محصول" data-en="Product overview">نمای کلی محصول</span><span class="dash-chip" data-fa="ارزش‌آفرینی" data-en="Value creation">ارزش‌آفرینی</span></div>
+            <div class="dash-kpis">
+              <div class="kpi"><small data-fa="تمرکز" data-en="Focus">تمرکز</small><strong data-fa="نیاز کاربر" data-en="User needs">نیاز کاربر</strong></div>
+              <div class="kpi"><small data-fa="رویکرد" data-en="Approach">رویکرد</small><strong data-fa="بهبود مستمر" data-en="Continuous improvement">بهبود مستمر</strong></div>
+            </div>
+            <div class="chart"><div class="chart-label" data-fa="مسیر توسعه محصول" data-en="Product development journey">مسیر توسعه محصول</div><div class="bars"><i style="height:35%"></i><i style="height:53%"></i><i style="height:45%"></i><i style="height:70%"></i><i style="height:60%"></i><i style="height:82%"></i><i style="height:95%"></i></div></div>
+          </div>
+          <div class="float-card fc2"><strong data-fa="محصول بهتر" data-en="Better products">محصول بهتر</strong><span data-fa="فرایندهای ساده‌تر" data-en="Simpler processes">فرایندهای ساده‌تر</span></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker" data-fa="درباره من" data-en="ABOUT ME">درباره من</div><h2 data-fa="از شناخت مسئله تا ارائه راهکار" data-en="From understanding problems to delivering solutions">از شناخت مسئله تا ارائه راهکار</h2></div>
+        <div class="about-grid">
+          <div class="panel">
+            <p data-fa="من مدیر و مالک محصول در حوزه نرم‌افزارهای مالی و حسابداری هستم. مسیر حرفه‌ای‌ام را از استقرار و پشتیبانی نرم‌افزار آغاز کردم؛ تجربه‌ای که ارتباط مستقیم با مشتریان، شناخت مسائل واقعی کاربران و همکاری با تیم‌های عملیاتی را برایم به همراه داشته است. در ادامه، این شناخت را در مدیریت و توسعه محصولات نرم‌افزاری به کار گرفته‌ام؛ از تعریف چشم‌انداز و اولویت‌بندی نیازها تا همراهی تیم‌ها در مسیر عرضه و بهبود محصول." data-en="I am a Product Manager and Product Owner working in financial and accounting software. I began my career in software implementation and support—a foundation that gave me first-hand experience with customers, real user challenges, and operational teams. I now bring that perspective into product development, from shaping product direction and prioritizing needs to helping teams launch and continuously improve software products.">من مدیر و مالک محصول در حوزه نرم‌افزارهای مالی و حسابداری هستم. مسیر حرفه‌ای‌ام را از استقرار و پشتیبانی نرم‌افزار آغاز کردم؛ تجربه‌ای که ارتباط مستقیم با مشتریان، شناخت مسائل واقعی کاربران و همکاری با تیم‌های عملیاتی را برایم به همراه داشته است. در ادامه، این شناخت را در مدیریت و توسعه محصولات نرم‌افزاری به کار گرفته‌ام؛ از تعریف چشم‌انداز و اولویت‌بندی نیازها تا همراهی تیم‌ها در مسیر عرضه و بهبود محصول.</p>
+            <div class="facts">
+              <div class="fact"><small data-fa="تجربه حرفه‌ای" data-en="Professional experience">تجربه حرفه‌ای</small><strong data-fa="۱۵+ سال" data-en="15+ years">۱۵+ سال</strong></div>
+              <div class="fact"><small data-fa="حوزه اصلی" data-en="Core domain">حوزه اصلی</small><strong data-fa="نرم‌افزار مالی و حسابداری" data-en="Financial & accounting software">نرم‌افزار مالی و حسابداری</strong></div>
+              <div class="fact"><small data-fa="تحصیلات" data-en="Education">تحصیلات</small><strong data-fa="مدیریت مالی" data-en="Financial Management">مدیریت مالی</strong></div>
+              <div class="fact"><small data-fa="موقعیت" data-en="Location">موقعیت</small><strong data-fa="تهران، ایران" data-en="Tehran, Iran">تهران، ایران</strong></div>
+            </div>
+          </div>
+          <aside class="panel quote">
+            <div><div class="quote-mark">“</div><blockquote data-fa="محصول موفق، مسئله‌ای واقعی را برای کاربر حل می‌کند و در عین حال به هدف کسب‌وکار ارزش می‌رساند." data-en="A successful product solves a real user problem while creating meaningful value for the business.">محصول موفق، مسئله‌ای واقعی را برای کاربر حل می‌کند و در عین حال به هدف کسب‌وکار ارزش می‌رساند.</blockquote></div>
+            <cite data-fa="رویکرد من به مدیریت محصول" data-en="My approach to product management">رویکرد من به مدیریت محصول</cite>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" style="background:#eef3f8">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker" data-fa="مسیر حرفه‌ای" data-en="CAREER">مسیر حرفه‌ای</div><h2 data-fa="تجربه کاری" data-en="Experience">تجربه کاری</h2><p class="section-desc" data-fa="ترکیبی از مدیریت محصول، عملیات نرم‌افزار، پشتیبانی و تجربه اجرایی کسب‌وکار." data-en="A combination of product management, software operations, customer support, and business leadership.">ترکیبی از مدیریت محصول، عملیات نرم‌افزار، پشتیبانی و تجربه اجرایی کسب‌وکار.</p></div>
+        <div class="timeline">
+          <article class="job"><div class="period" data-fa="خرداد ۱۴۰۲ – اکنون" data-en="Jun 2023 – Present">خرداد ۱۴۰۲ – اکنون</div><div><h3 data-fa="مدیر محصول" data-en="Product Manager">مدیر محصول</h3><div class="company" data-fa="تدوین حساب آسیا" data-en="Tadvin Hesab Asia">تدوین حساب آسیا</div><p data-fa="مدیریت محصول سامانه مودیان تدوین با حدود ۲۰۰۰ کاربر و مشارکت در توسعه نرم‌افزار حسابداری تدوین حساب." data-en="Product management for Tadvin’s Taxpayer System software, reported in the résumé at around 2,000 users, and involvement in the development of Tadvin Hesab accounting software.">مدیریت محصول سامانه مودیان تدوین با حدود ۲۰۰۰ کاربر و مشارکت در توسعه نرم‌افزار حسابداری تدوین حساب.</p><div class="tagrow"><span class="tag" data-fa="مدیریت محصول" data-en="Product management">مدیریت محصول</span><span class="tag" data-fa="نرم‌افزار مالی" data-en="Financial software">نرم‌افزار مالی</span></div></div></article>
+          <article class="job"><div class="period" data-fa="مرداد ۱۴۰۳ – شهریور ۱۴۰۴" data-en="Aug 2024 – Sep 2025">مرداد ۱۴۰۳ – شهریور ۱۴۰۴</div><div><h3 data-fa="سرپرست استقرار و پشتیبانی" data-en="Implementation & Support Lead">سرپرست استقرار و پشتیبانی</h3><div class="company" data-fa="شرکت مشاورین نرم‌افزار سروشان" data-en="Soroushan Software Consultants">شرکت مشاورین نرم‌افزار سروشان</div><p data-fa="سرپرستی فعالیت‌های مرتبط با استقرار و پشتیبانی نرم‌افزار." data-en="Led software implementation and support activities.">سرپرستی فعالیت‌های مرتبط با استقرار و پشتیبانی نرم‌افزار.</p></div></article>
+          <article class="job"><div class="period" data-fa="آبان ۱۴۰۰ – مرداد ۱۴۰۳" data-en="Oct 2021 – Aug 2024">آبان ۱۴۰۰ – مرداد ۱۴۰۳</div><div><h3 data-fa="مدیر محصول" data-en="Product Manager">مدیر محصول</h3><div class="company" data-fa="گروه فناوری اطلاعات هلو" data-en="Holoo IT Group">گروه فناوری اطلاعات هلو</div><p data-fa="همکاری در فاز نخست نرم‌افزار حسابداری آنلاین «ابرا» با عنوان دستیار کسب‌وکار؛ محصول در نمایشگاه الکامپ ۱۴۰۲ رونمایی شد. همچنین فعالیت روی محصول حسابداری شخصی ابرا در فاز MVP." data-en="Worked on the first phase of Abrā, an online accounting product positioned as a business assistant, unveiled at ELECOMP 2023. Also contributed to the MVP phase of Abrā Personal Finance.">همکاری در فاز نخست نرم‌افزار حسابداری آنلاین «ابرا» با عنوان دستیار کسب‌وکار؛ محصول در نمایشگاه الکامپ ۱۴۰۲ رونمایی شد. همچنین فعالیت روی محصول حسابداری شخصی ابرا در فاز MVP.</p><div class="tagrow"><span class="tag">MVP</span><span class="tag" data-fa="نقشه راه محصول" data-en="Product roadmap">نقشه راه محصول</span></div></div></article>
+          <article class="job"><div class="period" data-fa="تیر ۱۳۹۰ – مرداد ۱۴۰۱" data-en="Jul 2011 – Aug 2022">تیر ۱۳۹۰ – مرداد ۱۴۰۱</div><div><h3 data-fa="سرپرست پشتیبانی" data-en="Support Supervisor">سرپرست پشتیبانی</h3><div class="company" data-fa="گروه فناوری اطلاعات هلو" data-en="Holoo IT Group">گروه فناوری اطلاعات هلو</div><p data-fa="سرپرستی پشتیبانی شیفت عصر و شب مرکز خدمات مشتریان؛ همکاری مستقیم با حدود ۲۰ کارشناس و هماهنگی غیرمستقیم با حدود ۶۰ کارشناس در شیفت‌های مختلف." data-en="Supervised evening and night shifts at the customer service center, working directly with around 20 specialists and coordinating indirectly with approximately 60 specialists across shifts.">سرپرستی پشتیبانی شیفت عصر و شب مرکز خدمات مشتریان؛ همکاری مستقیم با حدود ۲۰ کارشناس و هماهنگی غیرمستقیم با حدود ۶۰ کارشناس در شیفت‌های مختلف.</p></div></article>
+          <article class="job"><div class="period" data-fa="خرداد ۱۳۹۵ – مهر ۱۴۰۰" data-en="Jun 2016 – Oct 2021">خرداد ۱۳۹۵ – مهر ۱۴۰۰</div><div><h3 data-fa="مدیرعامل" data-en="Managing Director">مدیرعامل</h3><div class="company" data-fa="شرکت طرفه حساب رایا" data-en="Tarfeh Hesab Raya">شرکت طرفه حساب رایا</div><p data-fa="فعالیت در زمینه استقرار، پیاده‌سازی و آموزش نرم‌افزار حسابداری هلو." data-en="Oversaw implementation, deployment, and training for Holoo accounting software.">فعالیت در زمینه استقرار، پیاده‌سازی و آموزش نرم‌افزار حسابداری هلو.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker" data-fa="نمونه‌کارها" data-en="SELECTED WORK">نمونه‌کارها</div><h2 data-fa="محصولات و پروژه‌ها" data-en="Products & Projects">محصولات و پروژه‌ها</h2><p class="section-desc" data-fa="پیوندهایی به محصولات و سامانه‌هایی که در رزومه به آن‌ها اشاره شده است." data-en="Links to products and platforms referenced in my résumé.">پیوندهایی به محصولات و سامانه‌هایی که در رزومه به آن‌ها اشاره شده است.</p></div>
+        <div class="projects">
+          <article class="project"><div class="project-icon">↗</div><h3 data-fa="حسابینه" data-en="Hesabine">حسابینه</h3><p data-fa="وب‌سایت محصول درج‌شده در رزومه." data-en="Product website listed in my résumé.">وب‌سایت محصول درج‌شده در رزومه.</p><a href="https://hesabine.com/" target="_blank" rel="noopener noreferrer">hesabine.com ↗</a></article>
+          <article class="project"><div class="project-icon">▦</div><h3 data-fa="تدوین" data-en="Tadvin">تدوین</h3><p data-fa="وب‌سایت محصول و نرم‌افزار حسابداری تدوین." data-en="Tadvin product and accounting software website.">وب‌سایت محصول و نرم‌افزار حسابداری تدوین.</p><a href="https://tadvin.app/" target="_blank" rel="noopener noreferrer">tadvin.app ↗</a></article>
+          <article class="project"><div class="project-icon">◈</div><h3 data-fa="ابرا" data-en="Abra">ابرا</h3><p data-fa="سامانه آنلاین ابرا؛ در رزومه به‌عنوان یکی از پروژه‌های محصولی ذکر شده است." data-en="Abra online platform, referenced as one of the product projects in my résumé.">سامانه آنلاین ابرا؛ در رزومه به‌عنوان یکی از پروژه‌های محصولی ذکر شده است.</p><a href="https://app.abraset.ir/login" target="_blank" rel="noopener noreferrer">app.abraset.ir ↗</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" style="background:#eef3f8">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker" data-fa="توانمندی‌ها" data-en="EXPERTISE">توانمندی‌ها</div><h2 data-fa="حوزه‌های تخصصی" data-en="Areas of expertise">حوزه‌های تخصصی</h2></div>
+        <div class="skills-grid">
+          <div class="skillbox"><h3 data-fa="محصول و استراتژی" data-en="Product & Strategy">محصول و استراتژی</h3><span class="tag" data-fa="مدیریت محصول" data-en="Product management">مدیریت محصول</span><span class="tag" data-fa="مالکیت محصول" data-en="Product ownership">مالکیت محصول</span><span class="tag" data-fa="چشم‌انداز و مأموریت" data-en="Vision & mission">چشم‌انداز و مأموریت</span><span class="tag" data-fa="نقشه راه" data-en="Roadmapping">نقشه راه</span><span class="tag">Lean Startup</span></div>
+          <div class="skillbox"><h3 data-fa="کسب‌وکار و تحلیل" data-en="Business & Analysis">کسب‌وکار و تحلیل</h3><span class="tag" data-fa="تحلیل کسب‌وکار" data-en="Business analysis">تحلیل کسب‌وکار</span><span class="tag">KPI</span><span class="tag">OKR</span><span class="tag" data-fa="گزارش‌های مدیریتی" data-en="Management reporting">گزارش‌های مدیریتی</span><span class="tag" data-fa="هوش تجاری" data-en="Business intelligence">هوش تجاری</span></div>
+          <div class="skillbox"><h3 data-fa="رهبری و اجرا" data-en="Leadership & Delivery">رهبری و اجرا</h3><span class="tag" data-fa="رهبری تیم" data-en="Team leadership">رهبری تیم</span><span class="tag" data-fa="همکاری تیمی" data-en="Teamwork">همکاری تیمی</span><span class="tag" data-fa="مدیریت پروژه چابک" data-en="Agile project management">مدیریت پروژه چابک</span><span class="tag" data-fa="مدیریت مالی" data-en="Financial management">مدیریت مالی</span><span class="tag" data-fa="مدیریت ریسک" data-en="Risk management">مدیریت ریسک</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head"><div class="section-kicker" data-fa="تحصیلات و یادگیری" data-en="EDUCATION & LEARNING">تحصیلات و یادگیری</div><h2 data-fa="تحصیلات و دوره‌های منتخب" data-en="Education & selected courses">تحصیلات و دوره‌های منتخب</h2></div>
+        <div class="edu-grid">
+          <article class="edu"><h3 data-fa="کارشناسی ارشد مدیریت مالی" data-en="M.A. in Financial Management">کارشناسی ارشد مدیریت مالی</h3><p data-fa="دانشگاه اصفهان | در حال تحصیل (طبق رزومه)" data-en="University of Isfahan | In progress (as stated in résumé)">دانشگاه اصفهان | در حال تحصیل (طبق رزومه)</p></article>
+          <article class="edu"><h3 data-fa="کارشناسی مهندسی کامپیوتر – نرم‌افزار" data-en="B.Sc. in Computer Engineering – Software">کارشناسی مهندسی کامپیوتر – نرم‌افزار</h3><p data-fa="دانشگاه غیرانتفاعی آیندگان | ۱۳۸۶ تا ۱۳۸۹" data-en="Ayandegan Institute of Higher Education | 2007–2010">دانشگاه غیرانتفاعی آیندگان | ۱۳۸۶ تا ۱۳۸۹</p></article>
+        </div>
+        <div style="height:22px"></div>
+        <div class="course-list">
+          <div class="course" data-fa="مدیریت محصول — مؤسسه کار و کسب (۱۴۰۱)" data-en="Product Management — Karokasb Institute (2022)">مدیریت محصول — مؤسسه کار و کسب (۱۴۰۱)</div>
+          <div class="course" data-fa="تحلیل کسب‌وکار: از KPI تا OKR — مؤسسه توسعه (۱۴۰۱)" data-en="Business Analysis: From KPI to OKR — Tose'e Institute (2022)">تحلیل کسب‌وکار: از KPI تا OKR — مؤسسه توسعه (۱۴۰۱)</div>
+          <div class="course" data-fa="هوش تجاری — مؤسسه توسعه (۱۴۰۲)" data-en="Business Intelligence — Tose'e Institute (2023)">هوش تجاری — مؤسسه توسعه (۱۴۰۲)</div>
+          <div class="course" data-fa="مدیر بازاریابی داده‌محور — مؤسسه توسعه (۱۴۰۴)" data-en="Data-Driven Marketing Manager — Tose'e Institute (2025)">مدیر بازاریابی داده‌محور — مؤسسه توسعه (۱۴۰۴)</div>
+          <div class="course" data-fa="مدیریت پروژه چابک — مؤسسه توسعه (۱۴۰۰)" data-en="Agile Project Management — Tose'e Institute (2021)">مدیریت پروژه چابک — مؤسسه توسعه (۱۴۰۰)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="section-kicker" style="color:#67dedc" data-fa="در ارتباط باشیم" data-en="LET'S CONNECT">در ارتباط باشیم</div>
+        <h2 data-fa="برای گفت‌وگو درباره محصول، همکاری و ایده‌ها آماده‌ام." data-en="Open to conversations about products, collaboration, and ideas.">برای گفت‌وگو درباره محصول، همکاری و ایده‌ها آماده‌ام.</h2>
+        <p class="section-desc" data-fa="برای ارتباط حرفه‌ای، از طریق لینکدین یا ایمیل پیام دهید." data-en="For professional inquiries, feel free to reach out via LinkedIn or email.">برای ارتباط حرفه‌ای، از طریق لینکدین یا ایمیل پیام دهید.</p>
+        <div class="contact-row">
+          <a class="btn primary" style="background:#18aeb5;color:#10243e" href="https://www.linkedin.com/in/mohamad-jahedi-almas-849a6986/" target="_blank" rel="noopener noreferrer">in <span data-fa="لینکدین" data-en="LinkedIn">لینکدین</span> ↗</a>
+          <a class="btn secondary" href="mailto:mohamadjahedialmas@gmail.com">✉ mohamadjahedialmas@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-row"><span data-fa="© محمد جاهدی الماس — تمامی حقوق محفوظ است." data-en="© Mohamad Jahedi Almas — All rights reserved.">© محمد جاهدی الماس — تمامی حقوق محفوظ است.</span><span data-fa="ساخته‌شده با تمرکز بر محصول و سادگی" data-en="Built with product thinking and simplicity">ساخته‌شده با تمرکز بر محصول و سادگی</span></div></footer>
+
+  <script>
+    function setLang(lang) {
+      const isEn = lang === 'en';
+      document.documentElement.lang = lang;
+      document.documentElement.dir = isEn ? 'ltr' : 'rtl';
+      document.body.classList.toggle('en', isEn);
+      document.querySelectorAll('[data-fa][data-en]').forEach(el => {
+        el.innerHTML = isEn ? el.dataset.en : el.dataset.fa;
+      });
+      document.getElementById('faBtn').classList.toggle('active', !isEn);
+      document.getElementById('enBtn').classList.toggle('active', isEn);
+      document.title = isEn ? 'Mohamad Jahedi Almas | Product Manager' : 'محمد جاهدی الماس | مدیر و مالک محصول';
+      document.getElementById('navlinks').classList.remove('open');
+    }
+  </script>
+</body>
+</html>
