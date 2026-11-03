@@ -1,0 +1,152 @@
+[
+  {
+    "font": "vazirmatn",
+    "source": "rastikerdar/vazirmatn",
+    "path": "fonts/webfonts/Vazirmatn-Regular.woff2",
+    "sha": "c9824c872b3b4f2eb13a102748f8ef1a6ef97da0",
+    "size": 50684,
+    "tree": "6e553e33489a8f9dfaccc76860a2e3f3c1e66de7",
+    "name": "vazirmatn-regular.woff2",
+    "sha256": "e382101336c6eb32cfb31381c027d02d2e0354bad08f6a395d4088beb3db3d91"
+  },
+  {
+    "font": "vazirmatn",
+    "source": "rastikerdar/vazirmatn",
+    "path": "fonts/webfonts/Vazirmatn-Bold.woff2",
+    "sha": "65b427f86eba2cfa45900de247bc7cf3294cd1e5",
+    "size": 51020,
+    "tree": "6e553e33489a8f9dfaccc76860a2e3f3c1e66de7",
+    "name": "vazirmatn-bold.woff2",
+    "sha256": "836fae7d42d83faa249bc00e0099592be98a1fa260d22d82f269b6091e585627"
+  },
+  {
+    "font": "vazirmatn",
+    "source": "rastikerdar/vazirmatn",
+    "path": "OFL.txt",
+    "sha": "be66b3824e9772e75141e631695c5256f105fb57",
+    "size": 4391,
+    "tree": "6e553e33489a8f9dfaccc76860a2e3f3c1e66de7",
+    "name": "vazirmatn-LICENSE.txt",
+    "sha256": "17e355067c8284f47743a1ee3b1ef7ff684ff0601eda357f9353b10b3016ab31"
+  },
+  {
+    "font": "estedad",
+    "source": "aminabedi68/Estedad",
+    "path": "fonts/webfonts/Estedad-Regular.woff2",
+    "sha": "e8a847a28c8dfbf782e25e9f502fc59640acb47f",
+    "size": 78408,
+    "tree": "0dbe689787b8c2ea302373cb601d0f352f9f98e5",
+    "name": "estedad-regular.woff2",
+    "sha256": "5ee503d9d7b5a8e2c4e9915d6ac9c407afaca5e1c856d8a8d59197a48bbd555f"
+  },
+  {
+    "font": "estedad",
+    "source": "aminabedi68/Estedad",
+    "path": "fonts/webfonts/Estedad-Bold.woff2",
+    "sha": "8fa5b2c37277bbd5c0b75804ed980f78806c042e",
+    "size": 80524,
+    "tree": "0dbe689787b8c2ea302373cb601d0f352f9f98e5",
+    "name": "estedad-bold.woff2",
+    "sha256": "b12992482101db4f826dc003411d675883f64a63cf499e12261cc4240614114f"
+  },
+  {
+    "font": "estedad",
+    "source": "aminabedi68/Estedad",
+    "path": "OFL.txt",
+    "sha": "a3f7464479be728a1f858574ddb23a46dd83c8c8",
+    "size": 4388,
+    "tree": "0dbe689787b8c2ea302373cb601d0f352f9f98e5",
+    "name": "estedad-LICENSE.txt",
+    "sha256": "0417da48fc44780476e074f02f8400028ee704b3e222be5855fa6d960b9200ca"
+  },
+  {
+    "font": "shabnam",
+    "source": "rastikerdar/shabnam-font",
+    "path": "dist/Shabnam.woff2",
+    "sha": "986efc079d5bed34e393e43597c9e8b5911067ba",
+    "size": 35752,
+    "tree": "5283d80e0118d9d4439b1208e9b912588e563d06",
+    "name": "shabnam-regular.woff2",
+    "sha256": "540d3f4e172bd6b5c70dd06bce57e055ce59270e95ea642b414fe0709faaa085"
+  },
+  {
+    "font": "shabnam",
+    "source": "rastikerdar/shabnam-font",
+    "path": "dist/Shabnam-Bold.woff2",
+    "sha": "6190715bf211cc22ebb7ce2abd1218f7fe3b9f5c",
+    "size": 37644,
+    "tree": "5283d80e0118d9d4439b1208e9b912588e563d06",
+    "name": "shabnam-bold.woff2",
+    "sha256": "1ff187f5320ec4527ebb6a71831b88289a6cb18ca33ac34476b96960f0af7282"
+  },
+  {
+    "font": "shabnam",
+    "source": "rastikerdar/shabnam-font",
+    "path": "LICENSE",
+    "sha": "099bf8f69fad6aaa80e131b50103d8da00297d41",
+    "size": 4457,
+    "tree": "5283d80e0118d9d4439b1208e9b912588e563d06",
+    "name": "shabnam-LICENSE.txt",
+    "sha256": "1db30dc6cadf551c27ad2547ec24a20c8ecd5440e458add9067ae70895151c52"
+  },
+  {
+    "font": "sahel",
+    "source": "rastikerdar/sahel-font",
+    "path": "dist/Sahel.woff2",
+    "sha": "9a6a7ccc7c0f2ed7ecd78dd55e8672dc7a9718ac",
+    "size": 35408,
+    "tree": "81ea305068b028ce311807c574fef50f3d4e2c54",
+    "name": "sahel-regular.woff2",
+    "sha256": "df74c625136d60e981abbd32cc75624007e5b36cc41cc5327dff190d22b21772"
+  },
+  {
+    "font": "sahel",
+    "source": "rastikerdar/sahel-font",
+    "path": "dist/Sahel-Bold.woff2",
+    "sha": "ed30ea0ed8853690cfde18ecdb769c42db515633",
+    "size": 35996,
+    "tree": "81ea305068b028ce311807c574fef50f3d4e2c54",
+    "name": "sahel-bold.woff2",
+    "sha256": "162c05c4a6c2e975b07390f923425bb5e170e00c8bd3deccd784f6cb4326d289"
+  },
+  {
+    "font": "sahel",
+    "source": "rastikerdar/sahel-font",
+    "path": "LICENSE",
+    "sha": "ae3f0411ff5899174d7226d5bf6efb655e623513",
+    "size": 4518,
+    "tree": "81ea305068b028ce311807c574fef50f3d4e2c54",
+    "name": "sahel-LICENSE.txt",
+    "sha256": "4de56cc5fc458113a5704ec4d850191e640396008a6e45ff2a70d67ea6c5c74f"
+  },
+  {
+    "font": "samim",
+    "source": "rastikerdar/samim-font",
+    "path": "dist/Samim.woff2",
+    "sha": "5a139bf86b6c8e54bda2c1183862af308a5c7060",
+    "size": 36632,
+    "tree": "ee3ab5791d96818e0311d82e43a4887a059507e4",
+    "name": "samim-regular.woff2",
+    "sha256": "b45379592d11b2bb9135eb78cea8b54220d89b26d67fb19bae5d15a540d32556"
+  },
+  {
+    "font": "samim",
+    "source": "rastikerdar/samim-font",
+    "path": "dist/Samim-Bold.woff2",
+    "sha": "51e2d586918f43459e7e4fb9e9e99e1ad823c995",
+    "size": 38176,
+    "tree": "ee3ab5791d96818e0311d82e43a4887a059507e4",
+    "name": "samim-bold.woff2",
+    "sha256": "2433289a5eab77e0374c98180640c2eb1fa5301d6ec3c6219d720662cf0904fc"
+  },
+  {
+    "font": "samim",
+    "source": "rastikerdar/samim-font",
+    "path": "LICENSE",
+    "sha": "c1657e34a8946b5468bc83d1e350cbc3b22d0864",
+    "size": 4460,
+    "tree": "ee3ab5791d96818e0311d82e43a4887a059507e4",
+    "name": "samim-LICENSE.txt",
+    "sha256": "3040cd96c27bc48257e35016bcfe65f1c214d63f7771d2e292a467bb07d09a52"
+  }
+]
