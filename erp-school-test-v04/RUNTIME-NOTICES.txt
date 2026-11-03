@@ -1,0 +1,15 @@
+Browser test environment for ERP_School v0.4
+
+Pyodide 314.0.7 is loaded from https://cdn.jsdelivr.net/pyodide/v314.0.7/full/
+Pyodide is licensed under MPL-2.0; Python and other bundled components retain
+their respective upstream licenses. Official project: https://pyodide.org/
+Runtime license: https://github.com/pyodide/pyodide/blob/314.0.7/LICENSE
+
+The local PBKDF2 compatibility module bundles @noble/hashes 2.4.0 (MIT).
+Its complete license is in NOBLE-LICENSE.txt.
+
+The frontend uses React and Lucide; see THIRD_PARTY_LICENSES.txt in source.zip.
+The five self-hosted font families each include their upstream license in fonts/.
+
+No real school records, live credentials or service-role keys are distributed.
+The included SQLite seed is deliberately public, synthetic test data only.
